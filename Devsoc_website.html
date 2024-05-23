@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>Nelson Luo :)</h1>
+            <p>Computer Science | Mathematics | Occasional Extrovert</p>
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <div class="circle-content">
+                    <h2>Quick Info</h2>
+                    <p>Hello! My name is Nelson and I am a 1st year comp sci/adv maths student at UNSW. I have a LOT of hobbies and am generally interested in most topics. I have an older brother and the best dog in the world.</p>
+                </div>
+            </div>
+            <div class="circle">
+                <div class="circle-content">
+                    <h2>Hobbies</h2>
+                    <p>Click my hobbies to reveal more info!</p>
+                    <button data-target="more-info-0" class="reveal-button button-text">Piano</button>
+                    <button data-target="more-info-1" class="reveal-button button-text">Gaming</button>
+                    <button data-target="more-info-2" class="reveal-button button-text">Food</button>
+                    <button data-target="more-info-3" class="reveal-button button-text">Music</button>
+                    <button data-target="more-info-4" class="reveal-button button-text">Bouldering</button>
+                    <button data-target="more-info-5" class="reveal-button button-text">Others</button>
+                    <p id="more-info-0" class="toggle-paragraph hidden"> My relationship with piano is very love hate. At first I was forced to play (like every other kid) by my parents, but now it's pretty fun. </p>
+                    <p id="more-info-1" class="toggle-paragraph hidden"> I would consider myself a casual gamer nowadays, usually just a few games here and there when I'm free, mostly tft :). And yes I play league :( (since season 2).</p>
+                    <p id="more-info-2" class="toggle-paragraph hidden"> I LOVE FOOD. Not much else to say, it's the greatest comfort after a stressful day.</p>
+                    <p id="more-info-3" class="toggle-paragraph hidden"> I listen to a lot of music genres, so I wouldn't say I have a favourite but its usually pop/K-pop/mando-pop/rap.</p>
+                    <p id="more-info-4" class="toggle-paragraph hidden"> Climbing rocks :). Solid past time and the only exercise I get apart from going to the gym and a little basketball. I climb V17 (I can't climb yellow at 9 degrees).</p>
+                    <p id="more-info-5" class="toggle-paragraph hidden"> This is mostly my interests which are watches (I want a Vacheron), cars (Dreaming of an LFA), PC parts (Team NVIDIA), NBA (I support the Mavs).</p>
+                
+                </div>
+            </div>
+            <div class="circle">
+                <div class="circle-content">
+                    <h2>Academic Weaponry</h2>
+                    <p>I am not an academic weapon. But next term is my term :). My coding experience so far includes: </p>
+                    <ul>
+                        <li> - Year 9/10 IST which was mostly html/css/js and python. Nothing too advanced </li>
+                        <li> - A website for my dad's business which he rejected cause he said it was too much effort</li>
+                        <li> - COMP1511 but I'm eager to learn more!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="circle">
+                <div class="circle-content">
+                    <h2>Contact</h2>
+                    <p>nelsonluo9@gmail.com</p>
+                    <p><a href="https://www.linkedin.com/in/nelson-luo-0856351a4/">My Linked-in</a></p>
+                    <p><a href="https://github.com/JISOC-2511">My Github Profile</a></p>
+                    <p><a href="https://www.facebook.com/profile.php?id=100013490440657">My Facebook</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tenor-gif-embed center-gif" data-postid="26136831" data-share-method="host" data-aspect-ratio="1" data-width="12%"><a href="https://tenor.com/view/pompompurin-sanrio-yellow-gif-26136831">Pompompurin Sanrio GIF</a>from <a href="https://tenor.com/search/pompompurin-gifs">Pompompurin GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <script>
+        document.querySelectorAll('.reveal-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const targetParagraph = document.getElementById(targetId);
+
+                document.querySelectorAll('.toggle-paragraph').forEach(paragraph => {
+                    if (paragraph !== targetParagraph) {
+                        paragraph.classList.add('hidden');
+                    }
+                });
+
+                if (targetParagraph.classList.contains('hidden')) {
+                    targetParagraph.classList.remove('hidden');
+                } else {
+                    targetParagraph.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

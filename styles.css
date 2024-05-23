@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #daf178;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+.profile-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle {
+    width: 45%;
+    height: 45%;
+    background-color: #0c5e0c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.circle-content {
+    color: #fff;
+}
+
+.circle-content h2 {
+    margin-bottom: 10px;
+}
+
+.circle-content p, .circle-content ul {
+    font-size: 1em;
+    line-height: 1.6;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.circle-content ul li {
+    margin-bottom: 10px;
+}
+
+.circle-content a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.circle-content a:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #daf178;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.reveal-button:hover {
+    background-color: #daf178;
+}
+
+.button-text {
+    color:#666;
+}
+
+.center-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -349%);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #0c5e0c;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
